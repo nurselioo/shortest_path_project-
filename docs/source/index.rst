@@ -1,0 +1,87 @@
+.. shortest_path_project documentation master file, created by
+   sphinx-quickstart on Tue May 20 18:43:57 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+shortest_path_project documentation
+===================================
+
+Add your content using ``reStructuredText`` syntax. See the
+`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+documentation for details.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   modules 
+
+Shortest Path Project
+=====================
+
+Welcome to the documentation of the **Shortest Path Project**.  
+This project implements the Dijkstra algorithm to find the shortest paths in a graph.
+
+.. image:: _static/imagee.png
+   :alt: Shortest Path Graph Example
+   :align: center
+   :width: 400px
+
+
+
+
+Project Structure
+-----------------
+
+The project is organized as follows:
+
+.. code-block:: text
+
+    shortest_path_project/
+    ├── shortestpath/
+    │   ├── __init__.py
+    │   └── shortestpath.py
+    ├── tests/
+    │   └── test_shortestpath.py
+    ├── docs/
+    │   ├── source/
+    │   └── build/
+    ├── setup.py
+    ├── requirements.txt
+    ├── README.md
+    └── .github/
+        └── workflows/
+            └── python-test.yml
+
+Testing
+-------
+
+Tests are implemented using **pytest** to ensure the correctness of the Dijkstra algorithm.  
+Run tests with:
+
+.. code-block:: bash
+
+    python -m pytest
+
+Documentation
+-------------
+
+The documentation is built with **Sphinx** and uses the **Read The Docs** theme for a clean and readable layout.  
+To generate the HTML docs, run:
+
+.. code-block:: bash
+
+    cd docs
+    make html
+
+The generated documentation can be found at `docs/build/html/index.html` and viewed in any modern web browser.
+
+---
+
+
+
+Thank you for visiting the Shortest Path Project documentation!
+
+
+
